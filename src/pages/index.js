@@ -38,7 +38,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="homepage">
-        <h1>The free and automated web3 allowlist platform</h1>
+        <h1>The free and automated P2P allowlist platform</h1>
 
         <p className="chakra-text css-tjq7t3">
           Tools for teams to build demand fast. Maximum control, minimum
