@@ -83,7 +83,7 @@ export default function Home() {
         <div className="card2">
           <span>Battle-tested, multi-chain infrastructure</span>
           <p>
-          Built on Alchemy's legendary developer platform, your project will seamlessly scale with demand. Spearmint is available for teams building on Ethereum, Polygon, Arbitrum and Optimism.
+          Built on Alchemy is legendary developer platform, your project will seamlessly scale with demand. Spearmint is available for teams building on Ethereum, Polygon, Arbitrum and Optimism.
           </p>
         </div>
        
