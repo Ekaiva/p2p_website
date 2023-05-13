@@ -73,12 +73,13 @@ export default function Home() {
           </p>
         </div>
         <div className="card2_image">
-          <Image src={statics} alt="statics" height={500} width={425}/>
+         
+          <Image className="display_none" src={statics} alt="statics" height={500} width={425}/>
         </div>
       </div>
       <div className="homepage2">
       <div className="card3_image">
-          <Image src={building} alt="statics" height={469} width={500}/>
+          <Image className="display_none"  src={building} alt="statics" height={469} width={500}/>
         </div>
         <div className="card2">
           <span>Battle-tested, multi-chain infrastructure</span>
