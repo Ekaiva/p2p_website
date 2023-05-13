@@ -6,7 +6,8 @@ import airdrop from "../../public/airdrop.svg"
 import content from "../../public/content.svg"
 import giftcard from "../../public/giftcard.svg"
 import star from "../../public/star.svg"
-
+import statics from "../../public/statics.png"
+import building from "../../public/building.png"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -44,25 +45,49 @@ export default function Home() {
           Tools for teams to build demand fast. Maximum control, minimum
           overhead. Totally free.
         </p>
-       
+
       </div>
       <div className="button">
-      <button>Get Started</button>
+        <button>Get Started</button>
       </div>
       <div className="card_main">
-         {data.map((item,index)=>{
-           return(
+        {data.map((item, index) => {
+          return (
             <div key={index} className="card_box">
-             <div className="img_button">
-             {index===1?  <Image src={star} alt="star"/>:index===2? <Image src={airdrop} alt="star"/>:index===3? <Image src={giftcard} alt="star"/>: <Image src={content} alt="star"/>}
-             </div>
-            <h1>{item.head}</h1>
-             <p >{item.text}</p>
-             </div>
-           )
-         })}
-          
+              <div className="img_button">
+                {index === 1 ? <Image src={star} alt="star" /> : index === 2 ? <Image src={airdrop} alt="star" /> : index === 3 ? <Image src={giftcard} alt="star" /> : <Image src={content} alt="star" />}
+              </div>
+              <h1>{item.head}</h1>
+              <p >{item.text}</p>
+            </div>
+          )
+        })}
+
+      </div>
+     
+      <div className="homepage2">
+        <div className="card2">
+          <span> Maximum visibility</span>
+          <p>
+            Use your allowlist dashboard to monitor registrations, easily attribute demand back to specific marketing initiatives and identify opportunities to double down.
+          </p>
         </div>
+        <div className="card2_image">
+          <Image src={statics} alt="statics" height={500} width={425}/>
+        </div>
+      </div>
+      <div className="homepage2">
+      <div className="card3_image">
+          <Image src={building} alt="statics" height={469} width={500}/>
+        </div>
+        <div className="card2">
+          <span>Battle-tested, multi-chain infrastructure</span>
+          <p>
+          Built on Alchemy's legendary developer platform, your project will seamlessly scale with demand. Spearmint is available for teams building on Ethereum, Polygon, Arbitrum and Optimism.
+          </p>
+        </div>
+       
+      </div>
     </>
   );
 }
