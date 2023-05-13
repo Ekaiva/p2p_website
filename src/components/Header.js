@@ -9,7 +9,7 @@ const Header = () => {
         <div className="inner_card">
             <div className="css-1lekzkb">
            <a>
-               <Image src={logo} width={145} height={28} />
+               <Image src={logo} width={145} height={28} alt="p2p" />
                
            </a>
            <div className="chakra-stack css-g60g6i chakra">
