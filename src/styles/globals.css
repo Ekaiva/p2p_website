@@ -195,7 +195,6 @@ a {
   background-color: #181d27;
   margin-bottom: 3%;
   margin-top: 3%;
-
 }
 .card_box p {
   width: fit-content;
@@ -340,4 +339,27 @@ opacity: 0.8;
   
 }
 
-
+.heading1{
+  text-align: center;
+  margin: 3%;
+  font-size: 24px;
+  font-weight: 800;
+}
+.subHead{
+  text-align: center;
+}
+.subHead bold{
+   margin-top: 3%;
+   color: #00d2cf;
+   font-family: 800 !important;
+}
+.faq hr{
+  
+  margin:3%;
+border-top: 0.5px solid #3f444e;
+}
+.footer{
+  padding: 4%;
+  background-color: #171923;
+  text-align: center;
+}
