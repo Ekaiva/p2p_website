@@ -113,7 +113,7 @@ export default function Home() {
       </div>
       <div className="subHead">
         <div style={{marginTop:"3%"}}>
-         <bold>WE'RE HERE TO HELP</bold>
+         <bold>WE ARE HERE TO HELP</bold>
          </div>
         <div className="heading1">
         {/* <h1>Frequently asked questions</h1> */}
