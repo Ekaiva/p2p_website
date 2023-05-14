@@ -8,6 +8,9 @@ import giftcard from "../../public/giftcard.svg"
 import star from "../../public/star.svg"
 import statics from "../../public/statics.png"
 import building from "../../public/building.png"
+import { useState } from "react";
+import { Accordion, Card, Button } from 'react-bootstrap';
+import logo from "../../public/logo.svg"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -29,6 +32,25 @@ export default function Home() {
       head: "NFT Launch",
       text: "Curate an authentic community around your NFT collection with granular token requirements, custom questions, and more!",
     },
+  ];
+  
+
+  const [activeItem, setActiveItem] = useState(null);
+
+  const faqItems = [
+    {
+      question: 'What is Next.js?',
+      answer: 'Next.js is a framework for building server-side rendered React applications.'
+    },
+    {
+      question: 'What are the benefits of using Next.js?',
+      answer: 'Next.js provides many benefits including server-side rendering, automatic code splitting, and simplified routing.'
+    },
+    {
+      question: 'How do I get started with Next.js?',
+      answer: 'You can get started with Next.js by creating a new project using the `create-next-app` command.'
+    },
+    // Add more FAQ items as needed
   ];
   return (
     <>
@@ -89,6 +111,44 @@ export default function Home() {
         </div>
        
       </div>
+      <div className="subHead">
+        <div style={{marginTop:"3%"}}>
+         <bold>WE ARE HERE TO HELP</bold>
+         </div>
+        <div className="heading1">
+        {/* <h1>Frequently asked questions</h1> */}
+        </div>
+
+        <div className="faq">
+          {/* <hr/> */}
+          {/* <Accordion>
+      {faqItems.map((item, index) => (
+        <Accordion.Item key={index} eventKey={index.toString()} onClick={() => setActiveItem(index)}>
+          <Card>
+            <Accordion.Header>
+              <Button variant="link" className="text-start">
+                {item.question}
+              </Button>
+            </Accordion.Header>
+            <Accordion.Body>
+              {item.answer}
+            </Accordion.Body>
+          </Card>
+        </Accordion.Item>
+      ))}
+    </Accordion> */}
+        </div>
+       
+      </div>
+      <footer className="footer">
+      <div className="css-1lekzkb" style={{justifyContent:"center"}}>
+           <a>
+               <Image src={logo} width={145} height={28} alt="p2p" />
+               
+           </a>
+           </div>
+          
+      </footer>
     </>
   );
 }
